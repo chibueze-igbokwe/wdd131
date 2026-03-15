@@ -7,6 +7,7 @@
     --accent-bg: #f0f0f0;
     --border-color: #ccc;
     --text-color: #333;
+    --active-bg: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -34,7 +35,7 @@ header, footer {
 }
 
 .data {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--active-bg);
     padding: 1rem;
     border: 1px solid var(--border-color);
 }
