@@ -1,0 +1,33 @@
+<!-- week03/responsive-images.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Activity - Igbokwe Chibueze</title>
+    <meta name="description" content="Learning how to use the HTML picture element and srcset for art direction.">
+    <meta name="author" content="Igbokwe Chibueze">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Images & Art Direction</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Lagos Nigeria Temple" width="500" height="250">
+            </picture>
+        </div>
+        <article>
+            <h2>Understanding Art Direction</h2>
+            <p>Art direction isn't just about resizing; it's about <strong>cropping</strong> images so the focus remains on the important subject regardless of screen size.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Igbokwe Chibueze | Nigeria</p>
+    </footer>
+</body>
+</html>

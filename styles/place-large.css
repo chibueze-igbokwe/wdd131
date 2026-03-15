@@ -1,0 +1,57 @@
+/* styles/place-large.css */
+
+/**
+ * Author: Igbokwe Chibueze
+ * Large view styles for the Country Page
+ */
+
+@media screen and (min-width: 600px) {
+    /* Main Layout */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Hero section spans across multiple columns */
+    .hero {
+        grid-column: 1 / 4;
+        position: relative; /* Necessary for absolute positioning of children */
+    }
+
+    /* Overlaying the Data section on the Hero image */
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+        padding: 1.5rem;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        max-width: 300px;
+    }
+
+    /* Weather box positioning */
+    .weather {
+        grid-column: 3 / 4;
+        grid-row: 1; /* Aligns with the top of the grid if desired */
+        margin: 0;
+        height: fit-content;
+        z-index: 10; /* Ensures it stays above other elements if they overlap */
+    }
+
+    /* Layout adjustment for the weather details */
+    .weather-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Hide the mobile SVG icon in large view and use the pseudo-element emoticon instead */
+    .weather-icon {
+        display: none;
+    }
+}
