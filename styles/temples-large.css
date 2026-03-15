@@ -1,15 +1,24 @@
 /* styles/temples-large.css */
 
-@media screen and (min-width: 600px) {
-    #menu { display: none; } /* Hide hamburger */
+/* Author: Igbokwe Chibueze */
 
-    .navigation {
-        display: flex !important; /* Always show menu */
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    /* Adjust nav to horizontal */
+    nav {
         flex-direction: row;
         justify-content: center;
     }
 
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+    }
+
     .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
