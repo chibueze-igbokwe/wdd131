@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Incident</title>
+
+<meta name="description" content="Report workplace incidents using SafeTrack.">
+<meta name="author" content="Chibueze Igbokwe">
+
+<link rel="stylesheet" href="styles/styles.css">
+<script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Report Incident</h1>
+</header>
+
+<main>
+<form method="get" action="review.html">
+
+<label for="product">Incident Type *</label>
+<select id="product" name="product" required>
+  <option value="" disabled selected>Select Incident...</option>
+</select>
+
+<fieldset>
+<legend>Severity *</legend>
+
+<input type="radio" id="r1" name="rating" value="1" required>
+<label for="r1">Low</label>
+
+<input type="radio" id="r2" name="rating" value="2" required>
+<label for="r2">Moderate</label>
+
+<input type="radio" id="r3" name="rating" value="3" required>
+<label for="r3">High</label>
+
+<input type="radio" id="r4" name="rating" value="4" required>
+<label for="r4">Critical</label>
+
+<input type="radio" id="r5" name="rating" value="5" required>
+<label for="r5">Severe</label>
+
+</fieldset>
+
+<label for="date">Date *</label>
+<input type="date" id="date" name="date" required>
+
+<label for="review">Description</label>
+<textarea id="review" name="review"></textarea>
+
+<input type="submit" value="Submit Report">
+
+</form>
+</main>
+
+</body>
+</html>
