@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #1f6f54;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+button {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#temple-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  #temple-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
