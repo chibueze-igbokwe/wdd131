@@ -1,0 +1,63 @@
+/* =========================
+   SafeTrack Site Plan Styles
+   ========================= */
+
+/* Root Variables (Color Scheme) */
+:root {
+  --primary-color: #1f6f54;   /* Deep Green */
+  --accent-color: #f39c12;    /* Orange */
+  --bg-color: #f4f6f8;        /* Light Gray */
+  --text-color: #2c2c2c;      /* Dark Text */
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  background: white;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-left: 6px solid var(--accent-color);
+  border-radius: 6px;
+}
+
+/* Headings */
+h1, h2 {
+  color: var(--primary-color);
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Wireframe container */
+.wireframe {
+  background: #e9ecef;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Wireframe boxes */
+.box {
+  border: 2px dashed #999;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  background: white;
+}
